@@ -55,7 +55,6 @@ const App = () => {
     if (target === currTarget) {
       return;
     }
-      console.log('Упсс')
 
     setState((prevState) => ({
       ...prevState,

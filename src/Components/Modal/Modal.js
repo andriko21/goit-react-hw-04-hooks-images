@@ -2,10 +2,9 @@ import React, { useEffect, useCallback} from "react";
 import style from "./Modal.module.css";
 
 const Modal = ({ closeModal, children }) => {
-  const handleBackDropClick = ({ target, currTarget }) => {
-    if (target !== currTarget) {
+   const handleBackDropClick = ({ target, currentTarget }) => {
+    if (target === currentTarget) {
       closeModal();
-      return;
     }
   };
 
